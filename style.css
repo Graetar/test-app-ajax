@@ -6,14 +6,14 @@ body {
 }
 
 #container {
-    width: 400px;
+    width: 600px;
     margin: 50px auto;
 }
 
 #menu {
     float: left;
     clear: both;
-    width: 400px;
+    width: 600px;
     height: 25px;
     margin-bottom: 2px;
     padding: 5px 0;
@@ -40,11 +40,10 @@ li {
 }
 
 li:hover {
-    color: #EEEE00;
     text-decoration: underline;
 }
 
-#page1 {
+#page1, #page2 {
     border-right: 2px solid #EEEEEE;
 }
 
@@ -52,7 +51,7 @@ li:hover {
     box-sizing: border-box;
     float: left;
     clear: both;
-    width: 400px;
+    width: 600px;
     height: 280px;
     padding: 20px;
     background-color: #FFFFFF;
