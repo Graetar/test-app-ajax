@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX test</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#page1").click(function(){
+                $("#content").load("page1.html");
+                $(this).css('color', '#EEEE00');
+                $("#page2").css('color', '#EEEEEE');
+            });
+            $("#page2").click(function(){
+                $("#content").load("page2.html");
+                $("#page1").css('color', '#EEEEEE');
+                $(this).css('color', '#EEEE00');
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div id="container">
+
+    <div id="menu">
+        <ul>
+            <li id="page1">Page 1</li>
+            <li id="page2">Page 2</li>
+        </ul>
+    </div>
+
+    <div id="content"></div>
+
+</div>
+
+</body>
+</html>
